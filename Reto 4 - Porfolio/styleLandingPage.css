@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--mycolor1);
+}
+:root {
+    --mycolor1: rgb(24, 24, 130);
+    --mycolor2: #1a73e8;
+}
+
+.imagenLanPag{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .imagenLanPag img {
+        height: 50vh;
+        border-radius: 29px 29px 29px 29px;
+            -webkit-border-radius: 29px 29px 29px 29px;
+            -moz-border-radius: 29px 29px 29px 29px;
+        box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+    }
+
+.option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+    .op {
+        cursor: pointer;
+    }
+
+    .op p {
+            height: 22vh;
+            width: 18vw;
+            border: 0.5px solid white;
+            border-radius: 29px 29px 29px 29px;
+                -webkit-border-radius: 29px 29px 29px 29px;
+                -moz-border-radius: 29px 29px 29px 29px;
+            box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+
+            color: var(--mycolor2);
+            font-size: 200%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+            .op p:hover {
+                box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+                    -webkit-box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+                    -moz-box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+
+                transform: scale(1.2);
+                
+                color: white;
+
+                /* transform: rotateY(190deg); */
+            
+            }
+
+    .footer {
+        height: 5vh;
+        background-color: var(--mycolor1);
+        color: var(--mycolor2);
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        }

@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--mycolor1);
+}
+:root {
+    --mycolor1: rgb(24, 24, 130);
+    --mycolor2: #1a73e8;
+}
+
+.sobreMi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+  .imagenSobreMi{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .imagenSobreMi img {
+        height: 30vh;
+        border-radius: 10%;
+        border: 0.5px solid white;
+        box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+            transition: 1s;
+    }
+
+    .imagenSobreMi img:hover {
+      box-shadow: -5px 2px 30px 17px rgba(42, 44, 48, 0.75);
+          -webkit-box-shadow: -5px 2px 30px 17px rgba(42, 44, 48, 0.75);
+          -moz-box-shadow: -5px 2px 30px 17px rgba(42, 44, 48, 0.75);
+
+      transform: scale(1.35);
+      
+  }
+
+  
+    .op {
+        cursor: pointer;
+    }
+  
+    
+  .option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+      .op p {
+                height: 40vh;
+                width: 30vw;
+                border: 0.5px solid white;
+                border-radius: 10;
+                    -webkit-border-radius: 29px 29px 29px 29px;
+                    -moz-border-radius: 29px 29px 29px 29px;
+                box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 2px 3px 26px 7px rgba(0,0,0,0.75);
+
+                color: var(--mycolor2);
+                font-size: 180%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s;
+            }
+
+            .op p:hover {
+                box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+                    -webkit-box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+                    -moz-box-shadow: -5px 2px 30px 17px rgba(26,115,232,0.75);
+
+                transform: scale(1.2);
+                
+                color: white;
+            
+            }
+  .footer {
+    height: 5vh;
+    background-color: var(--mycolor1);
+    color: var(--mycolor2);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

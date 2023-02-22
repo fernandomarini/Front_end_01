@@ -1,0 +1,231 @@
+body {
+    background-color: blue;
+    margin: 0%;
+    justify-content: center;  
+}
+
+.encabezado {    
+    background-color: black;
+    min-height: 4vw;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+.encabezado a {
+    color: rgb(65, 140, 233);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.center {
+    display: flex;
+    background-color: blue;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1 {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccion1 img {
+    width: 45%;
+}
+
+.seccion2 {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion2 img {
+    width: 30%;
+}
+
+.sec2tex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.sec2tex h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1200;
+}
+
+.sec2tex p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.seccion4 {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    color: blue;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seccion4 img{
+    width: 60vw;
+}
+
+.piePagina {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vw;
+    flex-wrap: wrap;
+}
+
+.seccion1CC {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec1CCtex {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.sec1CCtex p {
+    font-size: 1.3vw;
+}
+
+.seccion2CC {
+    height: 80vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccion2CC img {
+    width: 35%;
+}
+
+.sec3CC {
+    background-color: white;
+    height: 90vh;
+}
+
+.sec3CC img {
+    height: 80vh;
+}
+
+.sec2tex {    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4CC {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.seccion5CC {
+    height: 80vh;
+    background-color:white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;   
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1E {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1E h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 350%;
+}
+
+.sec1E h3 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 200%;
+}
+
+.sec2E {
+    height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec2E img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+.sec2E h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+}
+
+.sec3E {
+    height: 60vh;
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec3E img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+.sec3E h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+}
+
+.formulario {
+background-color: black;
+color: white ;
+font-size: 150%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
