@@ -1,0 +1,43 @@
+
+/*   ****** RETO 2 ****** */
+
+*{
+   text-align: center;
+}
+
+:root {
+    --mycolor1: rgb(68, 210, 68);
+    --mycolor2: black;
+}
+
+.father-01 {
+    height: 400px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.child-01-01 {
+    background-color: var(--mycolor1);
+}
+
+.child-01-02 {
+    background-color: var(--mycolor2);
+    color: white;
+}
+.child-01-03 {
+    background-color: var(--mycolor1);
+}
+.child-01-04 {
+    background-color: var(--mycolor2);
+    color: white;
+}
+.child-01-05 {
+    background-color: var(--mycolor1);
+}
+
+.child-01-06 {
+    background-color: var(--mycolor2);
+    color: white;
+} 

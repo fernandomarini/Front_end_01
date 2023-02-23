@@ -1,0 +1,39 @@
+
+/*   ****** RETO 1 ****** */
+
+
+*{ 
+    color: white;
+    text-align: center;
+}
+
+.father {
+    display: grid;
+    grid-template-columns: 300px 150px 300px;
+    grid-template-rows: 200px 200px;
+}
+
+.child-01 {
+    background-color: green;
+}
+
+.child-02 {
+    background-color: orange;
+}
+
+.child-03 {
+    background-color: orangered;
+}
+
+.child-04 {
+    background-color: red;
+}
+
+.child-05 {
+    background-color: blue;
+}
+
+.child-06 {
+    background-color: yellow;
+}
+  
