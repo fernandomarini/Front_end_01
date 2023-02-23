@@ -36,7 +36,7 @@
     flex-direction: column;
     gap: 7px;
   }
-
+ 
 .form {
     width: 300px;
     background-color: rgba(255, 255, 255, 1);
@@ -66,24 +66,24 @@
     outline: none;
   }
   
-  .input:focus {
-    border:1px solid rgb(179, 179, 179);
-  }
+    .input:focus {
+      border:1px solid rgb(179, 179, 179);
+    }
   
-  #loginBtn {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    width: 100%;
-    padding:6px;
-    align-self: center;
-    background: #4cbbf7;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-  
+    #btn {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      width: 100%;
+      padding:6px;
+      align-self: center;
+      background: #4cbbf7;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    
   .face{
     text-decoration: none;
     font-size: 0.7rem;
@@ -95,20 +95,20 @@
     align-content: center;
   }
 
-   .face img{
-    height: 25px;
-   }
+    .face img{
+      height: 25px;
+    }
   
-  #Password {
-    text-align: center;
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
-    font-size: 11px;
-    align-self: center;
-    text-decoration: none;
-    color: #484848;
-  }
+    #Password {
+      text-align: center;
+      position: relative;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 11px;
+      align-self: center;
+      text-decoration: none;
+      color: #484848;
+    }
 
 .form2{
     width: 300px;
@@ -122,15 +122,15 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
- .form2 p{
-    font-size: 0.8rem;
- }
+  .form2 p{
+      font-size: 0.8rem;
+  }
 
- .form2 p span{
-    font-weight: bold;
-    font-size: 0.9rem;
-    color:#259fe2
- }
+  .form2 p span{
+      font-weight: bold;
+      font-size: 0.9rem;
+      color:#259fe2
+  }
 
 .main-app{
     font-family: Arial, Helvetica, sans-serif;
