@@ -1,0 +1,145 @@
+
+/*   ****** RETO 3 ****** */
+
+.main {
+    height: 60vh;
+    width: 50vw;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 3fr [y2] 3fr [y3] 3fr [y4] 1fr [y5];
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-column: x0 / x4;
+    grid-row: y0 / y1;
+    
+}
+    .header p{
+        font-size: 150%;
+    }
+
+.contenido {
+    background-color: blue;
+    grid-column: x0 / x3;
+    grid-row: y1 / y4;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] ;
+}
+
+    .content {
+        margin: 10px;
+        border: 1px solid white;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;   
+        font-weight: 1000;     
+        font-size: 120%;
+        grid-column: x0 / x3;
+        grid-row: y0 / y1 ;
+    }
+
+    .txt-01 {
+        margin: 10px;
+        border: 1px solid white;
+        color: white;
+        grid-column: x0 / x2;
+        grid-row: y1 / y3 ;
+    }
+
+    .txt-02 {
+        margin: 10px;
+        border: 1px solid white;
+        color: white;
+        grid-column: x2 / x3;
+        grid-row: y1 / y3;
+    }
+
+.menu {
+    background-color: rgb(32, 191, 101);
+    grid-column: x3 / x4;
+    grid-row: y1 / y4;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+}
+
+    .menu-main {
+        margin: 8px;
+        border: 5px solid black;
+        text-align: center;       
+        grid-column: x0 / x1 ;
+        grid-row: y0 / y1 ;
+
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] ;
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] ;
+    }
+
+    .menu-below-1 {
+        margin: 5px;
+        background-color:  black;
+        text-align: center;
+        color: white;
+        grid-column: x0 / x1 ;
+        grid-row: y1 / y2 ;
+    }
+
+    .menu-below-2 {
+        margin: 5px;
+        background-color:  black;
+        text-align: center;
+        color: white;
+        grid-column: x0 / x1 ;
+        grid-row: y2 / y3 ;
+    }
+
+    .menu-below-3 {
+        margin: 5px;
+        background-color:  black;
+        text-align: center;
+        color: white;
+        grid-column: x0 / x1 ;
+        grid-row: y3 / y4 ;
+    }
+
+        .txt-menu {
+            grid-column: x0 / x1; 
+            grid-row: y1 / y2 ;
+        }
+
+.footer-main {
+    background-color: blueviolet;
+    grid-column: x0 / x4 ;
+    grid-row: y4 / y5 ;
+
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1];
+}
+    .footer {
+        margin: 4px;
+        border: 3px solid black;
+        grid-column: x0 / x1 ;
+        grid-row: y0 / y1 ;   
+    }
+
+    .contacto {
+        margin: 4px;
+        border: 3px solid black;
+        grid-column: x1 / x2;
+        grid-row: y0 / y1;                  
+    }
+
+        .p {
+            color: white;
+            text-align: center;
+        }
+
+
+

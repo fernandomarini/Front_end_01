@@ -1,0 +1,92 @@
+.gridAreas {
+    display: grid;
+    grid-template-areas:    "head head img"
+                            "aside contenido contenido"
+                            "footer footer footer";
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(225, 29, 29);
+    grid-area: head;
+    text-align: center;
+    color: white;
+}
+
+.imagenes {
+    height: 100px;
+    background-color: rgb(120, 8, 8);
+    grid-area: img;
+    text-align: center;
+    color: white;
+}
+
+.article {
+    height: 400px;
+    background-color: orange;
+    grid-area: aside;
+
+    display: grid;
+    grid-template-areas: "aside01"
+                         "aside02"
+                         "aside03";
+}
+
+    .aside-01 {        
+        margin: 5px;
+        border: 5px solid orange;
+        background-color: white;
+        grid-area:aside01;
+        color:orangered;      
+        text-align: center; 
+    }
+
+    .vacio {        
+        margin: 5px;
+        border: 5px solid orange;
+        background-color: orange;
+        grid-area:aside02;
+        color:orangered;        
+    }
+
+
+    .aside-03 {        
+        margin: 5px;
+        border: 5px solid orange;
+        background-color: white;
+        grid-area:aside03;
+        color:orangered; 
+        text-align: center;
+    } 
+
+.cont {
+    height: 400px;
+    background-color: orangered;
+    grid-area: contenido;
+    text-align: center;
+    color: white;
+
+    display: grid;
+    grid-template-areas:  "contenido1"
+                            "texto";
+}
+    .cont-cont {
+        margin: 5px;
+        border: 2px solid white;
+        grid-area: contenido1;
+    }
+
+    .cont-txt {
+        margin: 5px;
+        border: 2px solid white;
+        grid-area: texto;
+    }
+
+
+.footer {
+    height: 100px;
+    grid-area: footer;
+    background-color: rgb(120, 8, 8);
+    text-align: center;
+    color: white;
+}
