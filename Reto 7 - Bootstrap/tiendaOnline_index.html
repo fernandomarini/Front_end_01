@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="tiendaOnline_jquery.js"></script>
+  </head>
+  <body>
+        <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid bg-black " >
+          <img src="Imagenes/tienda_logo.jpg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-secondary-emphasis" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary-emphasis" href="#">ULTIMAS LLEGADAS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-secondary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORIAS</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Categoria 01</a></li>
+                  <li><a class="dropdown-item" href="#">Categoria 02</a></li>
+                  <li><a class="dropdown-item" href="#">Categoria 03</a></li>
+                </ul>
+              </li>
+            </ul>        
+            </div>
+            <button type="button" id="btn-trolley" onclick="showTrolley()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              CARRITO
+            </button>
+        </div>       
+      </nav>
+
+     
+
+      <!-- MODAL -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al carrito</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="purchase-detail">
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="btn-buy" class="btn r btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    
+      <!-- COLUMNAS -->
+  
+      <div class="row align-items-center d-flex justify-content-center">
+        <div class="col-2">
+          <div class="card h-100 w-100">
+            <img src="Imagenes/art_01.jpg " class="card-img-top " style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Arandanos bañados en chocolate</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price">1500</p>
+                <a href="#" id="art01" type="button" onclick="buy(art01)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-2">
+          <div class="card h-100 w-100" >
+            <img src="Imagenes/art_02.jpg " class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Almendras bañada en chocolate blanco</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 1200</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art02)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+          </div>
+        <div class="col-2">
+          <div class="card h-100 w-100" >
+            <img src="Imagenes/art_07.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Lentejas confitadas de chocolate</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 900</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art03)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card h-100 w-100">
+            <img src="Imagenes/art_08.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Naranja bañada en chocolate</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 1700</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art04)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row d-flex justify-content-center">
+        <div class="col-2">
+          <div class="card h-100 w-100" >
+            <img src="Imagenes/art_03.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Almendras bañada en chocolate con leche</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 1350</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art05)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-2">
+          <div class="card h-100 w-100" >
+            <img src="Imagenes/art_04.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Mani bañado en chocolate</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 1100</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art06)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+          </div> 
+        <div class="col-2">
+          <div class="card h-100 w-100">
+            <img src="Imagenes/art_05.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Almendras bañada en chocolate semiamargo</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 1400</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art07)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card h-100 w-100">
+            <img src="Imagenes/art_06.jpg" class="card-img-top" style="height: 250px; width: 250px align-items-center; " alt="...">
+            <div class="card-body">
+                <h5 id="id-product" class="card-title">Cereal bañado en chocolate</h5>
+                <p class="card-text">Descripción del producto</p>
+                <p id="price-product" class="card-price"> 850</p>
+                <a href="#" id="btn-buy-card" type="button" onclick="buy(art08)" class="btn btn-primary bg-black">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
